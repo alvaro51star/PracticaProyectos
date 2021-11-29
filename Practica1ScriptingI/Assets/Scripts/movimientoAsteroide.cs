@@ -21,7 +21,7 @@ public class movimientoAsteroide : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector3(-velocidadAsteroide, 0, 0);
+        rb.velocity = new Vector3(0, -velocidadAsteroide, 0);
     }
 
 

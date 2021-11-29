@@ -135,4 +135,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bala: {fileID: 8914084706799298872, guid: a71b53a9402769540b50a1742b79c9e1, type: 3}
-  velocidadAsteroide: 10
+  velocidadAsteroide: 6
