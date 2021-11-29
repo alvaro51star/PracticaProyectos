@@ -21,9 +21,9 @@ public class movimiento : MonoBehaviour
     {
         tiempoDeRecarga -= Time.deltaTime;
         //Transforma el movimiento de las flechas en lo que hay que mover el vector
-        movement = Input.GetAxis("Vertical") * velocidad * Time.deltaTime;
+        movement = Input.GetAxis("Horizontal") * velocidad * Time.deltaTime;
         //Se mueve
-        gameObject.transform.Translate(0, movement, 0);
+        gameObject.transform.Translate(0, -movement, 0);
 
 
 
@@ -54,7 +54,7 @@ public class movimiento : MonoBehaviour
     void Shot()
     {
         GameObject bulletSpawn = Instantiate(bullet, balaLoc.position, bullet.transform.rotation);
-        bulletSpawn.GetComponent<Rigidbody2D>().velocity = new Vector3(bulletSpeed, 0, 0);
+        bulletSpawn.GetComponent<Rigidbody2D>().velocity = new Vector3(0, bulletSpeed, 0);
         Destroy(bulletSpawn, 2);
     }
 
